@@ -1,0 +1,220 @@
+/* GENERAL STYLE */
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*--------- WEB VERSION ---------*/
+
+/*--------- HEADER ---------*/
+.container-logo {
+  background: #b34232;
+  padding: 12px 30px;
+  margin-top: -8px;
+}
+
+.logo,
+.logo:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 1.125em;
+}
+
+#navbarNav ul li + li {
+  border-left: 1px solid #2e609c;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  line-height: 0.9;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: #2e609c;
+  font-size: 0.9em;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #b34232;
+}
+
+#navbarNav ul li:last-child a {
+  color: #b34232;
+}
+
+/*--------- INTRO ---------*/
+.intro {
+  height: 500px;
+  background: url("../img/img2-editada.jpg");
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+}
+
+.intro h2 {
+  color: black;
+  max-width: 380px;
+  padding: 40px 0 0 0;
+}
+
+.intro h2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100px;
+  margin-top: 10px;
+  background: #b34232;
+}
+
+/*--------- REPRESENT ---------*/
+.represent {
+  background: #f2f2f2;
+  padding: 60px 0 80px 0;
+}
+
+.represent .container h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.represent .container h2:before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60px;
+  background: #b34232;
+  margin: 0 auto 10px auto;
+}
+
+.represent-item {
+  background: none;
+  width: 360px;
+  border-top: 2px solid #656565;
+  padding: 20px 0 10px 0;
+}
+
+.represent-item h3 {
+  color: #b34232;
+  font-size: 16px;
+}
+
+/*--------- TESTIMONIALS ---------*/
+.testimonials {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.testimonials .container h2 {
+  margin-bottom: 60px;
+}
+
+.testimonials h2::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 40px;
+  background: #b34232;
+  margin: 0 auto 10px auto;
+}
+
+.testimonials .carousel-item p,
+.carousel-item h3 {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.control-slide {
+  width: 200px;
+  margin: 80px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 1.5em;
+  color: #a1a8b0;
+  padding: 5px;
+}
+
+/*--------- FOOTER ---------*/
+.footer {
+  background: #1b3146;
+  padding: 60px 0;
+  color: white;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer h3,
+P {
+  font-size: 16px;
+}
+
+/*--------- TABLET AND SMARTPHONE VERSION ----------*/
+
+/*--------- NAV ---------*/
+@media (max-width: 991.98px) {
+  .nav-item {
+    padding: 10px 0 10px 10px;
+  }
+}
+
+/*--------- INTRO ---------*/
+@media (max-width: 767.98px) {
+  .intro {
+    height: 340px;
+    background: url("../img/img2-editada.jpg");
+    background-size: 100% 340px;
+    background-repeat: no-repeat;
+  }
+
+  .intro .container h2 {
+    max-width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .intro .container h2:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    margin: 10px auto 0 auto;
+    background: #b34232;
+  }
+}
+
+/*--------- REPRESENT ---------*/
+@media (max-width: 1199.98px) {
+  .represent .container .row {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .represent .container .row div + div {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .represent .container .row {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer .container {
+    text-align: center;
+  }
+
+  .footer .container .row > div + div {
+    margin-top: 30px;
+  }
+}
